@@ -12,8 +12,10 @@ body {
 
 /* LANDING SECTION */
 .landing-section {
+     padding: 10%;
      display: grid;
      height: 100vh;
+     text-align: center;
      place-items: center;
      margin-bottom: 100px;
      box-shadow:  20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
@@ -81,4 +83,58 @@ body {
 .timeline-section .item-4 {
      grid-row: 4;
      grid-column: 3;
+}
+
+
+
+/* MOBILE RESPONSIVENESS  MAX-WIDTH: 800PX*/
+@media screen and (max-width: 800px) {
+     /* LANDING SECTION */
+     .landing-section h1 {
+          font-size: 100px;
+     }
+
+
+     /* TIMELINE SECTION */
+     .timeline-section {
+          grid: repeat(4, 1fr) / 10% 1fr;
+     }  
+
+     .timeline-section .timeline-line {
+          grid-column: 1;
+     }
+
+     .timeline-section .item-1 {
+          grid-column: 2;
+     }
+     
+     .timeline-section .item-2 {
+          grid-column: 2;
+     }
+     
+     .timeline-section .item-3 {
+          grid-column: 2;
+     }
+     
+     .timeline-section .item-4 {
+          grid-column: 2;
+     }
+}
+
+
+/* MOBILE RESPONSIVENESS  MAX-WIDTH: 500PX*/
+@media screen and (max-width: 500px) {
+     /* LANDING SECTION */
+     .landing-section h1 {
+          font-size: 80px;
+     }
+}
+
+
+/* MOBILE RESPONSIVENESS  MAX-WIDTH: 450PX*/
+@media screen and (max-width: 450px) {
+     /* LANDING SECTION */
+     .landing-section h1 {
+          font-size: 50px;
+     }
 }
